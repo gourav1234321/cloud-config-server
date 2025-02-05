@@ -12,8 +12,14 @@ microservice:
     endpoints:
       endpoint:
         uri: http://payment-service/payment/doPayment
+        appname: payment-service
+        path: /payment
+        name: /doPayment
   
   order-service:
     endpoints:
       endpoint:
         uri: http://order-service/order/bookOrder
+        appname: order-service
+        path: /order
+        name: /bookOrder
